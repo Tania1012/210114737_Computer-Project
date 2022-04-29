@@ -1,0 +1,76 @@
+*{margin: 0; padding: 0;font-family: 'Consolas', 'Monaco';}
+.container{
+     display: grid;
+     justify-content: center;
+     align-content: center;
+     min-height: 90vh;
+     grid-template-columns: 43vw;
+     grid-template-rows: repeat(3,8vh) 6vh repeat(2,10vh);
+     grid-gap: 20px;
+     
+}
+body{
+    background: rgb(85, 95, 105);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-size: 40px; 
+}
+.submit-btn{
+    background-color: rgb(58, 195, 182);
+}
+.bmi-value{
+    background-color: rgb(21, 225, 191);
+    display: grid;
+    text-indent: 0.75em;
+    grid-template-rows: 50% 50%;
+    
+}
+.status{
+    background-color:rgb(3, 220, 3);
+    display: grid;
+    text-indent: 0.75em;
+    grid-template-rows: 50% 50%;
+    
+}
+.container > div{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    border-radius: 10px;
+}
+button,input{
+    min-width: 100%;
+    min-height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.6vw;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+input{
+    background: rgb(180, 241, 242);
+    text-indent: 1.5em;
+    max-width:100% ;
+    color: black;
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+}
+button{
+    background:yellow;
+    cursor: pointer;
+}
+button:hover{
+    background: black;
+    color: white;
+}
